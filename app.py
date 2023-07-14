@@ -74,7 +74,7 @@ def lambda_handler(event, context):
     print("Started at:", datetime.datetime.now())
     download_path = tempfile.gettempdir()
 
-    print("Temp path:", download_path)
+    print("Temp path:", _path)
 
     all_brands = ShoppersStopBrand.select()
 
